@@ -8,7 +8,7 @@ export const useFetchGifs = (category) => {
     const [loading,isLoading]=useState(true);
 
     const getImages=async()=>{
-        const imagenes= await  getGifs(category);
+        const imagenes= await getGifs(category);
         setImages(imagenes);
         isLoading(false);
     }
